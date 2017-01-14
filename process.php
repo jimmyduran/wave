@@ -1,11 +1,11 @@
 <?php
 
-    $to = "your@domain.com";
+    $to = "jimmyduran70@icloud.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
 	$subject = $_REQUEST['subject'];
     $headers = "From: $from";
-    
+
 
     $fields = array();
     $fields{"name"} = "Name";

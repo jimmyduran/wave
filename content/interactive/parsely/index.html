@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>DIGIDAY</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+					
+</head>
+	
+<body>
+
+	<div id="container">
+					
+			<div id = "s1"><img src="s1.png" /></div>
+			<div id = "s2"><img src="s2.png" /></div>
+			<div id = "s3"><img src="s3.png" /></div>
+			<div id = "s4"><img src="s4.png" /></div>
+			<div id = "s5"><img src="s1.png" /></div>
+			<div id = "s6"><img src="s2.png" /></div>
+			<div id = "s7"><img src="s3.png" /></div>
+			<div id = "s8"><img src="s4.png" /></div>
+			
+			<div id="vid_player_container">
+			<video id="vid" preload="none">
+			  <source id="v1" src="" type="video/mp4">
+			  Your browser does not support the video tag.
+			</video>
+			<div id = "vid_still"><img id ="vs" src = ""></div>
+			</div>
+			
+			<div id="progress_bg_container">
+			<div id="progress_bg">
+			<progress id='progress_bar' max='100' value='0'><span>0</span>% played</progress>
+			</div>
+			</div>
+			
+			<div id = "yellow_bar"><img src = "yellow_bar.png" /></div>
+			
+			<div id = "t_container">
+				<div id = "t1a">Question</div>
+				<div id = "t1b">of the Day</div>
+			</div>
+			
+			<div id = "t1_container">
+				<div id = "t2">Are there too many metrics?</div>
+				<div id = "t3a">Brands want to see every detail, but agencies</div>
+				<div id = "t3b">often need a sherpa to guide them through the</div>
+				<div id = "t3c">treacherous peaks of media metrics. We sat down</div>
+				<div id = "t3d">with Samantha Skey, CRO of SheKnows, at the</div>
+				<div id = "t3e">Digiday Publishing Summit in Vail, Colorado for</div>
+				<div id = "t3f">a fireside chat about how publishers can help</div>
+				<div id = "t3g">their partners navigate through the whiteout</div>
+				<div id = "t3h">data conditions of a metric blizzard.</div>
+			</div>
+			
+			<div id = "t2_container">
+				<div id = "t22">Is autoplay video's cardinal sin?</div>
+				<div id = "t33a">We all know autoplay video delivers views,</div>
+				<div id = "t33b">but should publishers really to confront</div>
+				<div id = "t33c">their audience with sight, sound, and motion</div>
+				<div id = "t33d">at every turn? We asked Freddie Godfrey,</div>
+				<div id = "t33e">director of content syndication at Newsy </div>
+				<div id = "t33f">if autoplay is a betrayal of audience trust.</div>
+				<div id = "t33g">The answer might suprise you.</div>
+				
+			</div>
+			
+			<div id = "t3_container">
+				<div id = "t222">Platforms, friend of foe?</div>
+				<div id = "t333a">Platforms have never been more important</div>
+				<div id = "t333b">to publishers, but do they help or hurt? We</div>
+				<div id = "t333c">sat down with a few top publishers to find</div>
+				<div id = "t333d">out how they really feel about Facebook,</div>
+				<div id = "t333e">Google, Snapchat, and Twitter by asking</div>
+				<div id = "t333f">them a single question: Friend, or foe?</div>
+			</div>
+			
+			
+			
+			<div id = "l_container">
+				<div id = "l_txt_container">
+				<div id = "l_txt">SPONSORED BY</div>
+				</div>
+				
+				<div id = "logo"><img src ="logo.png" /></div>
+			</div>
+			
+			<div id = "n_txt">MORE IN<br />THIS SERIES</div>
+			
+			
+			<div id = "ct"></div>
+			<div id = "click_sound"></div>
+			<div id = "video_button"></div>
+			<div id = "video_button2"></div>
+			
+			<div id = "btns_vid">
+			<div id = "btn_pause"></div>
+			<div id = "btn_play"></div>
+			<div id = "btn_sound"></div>
+			</div>
+			<img id = "btn_replay" src="btn_replay.png">				
+			<div id = "vid_nav">
+				<div id = "n1"></div>
+				<div id = "n_line1"><img src="vid_line.png"/></div>
+				<div id = "n2"></div>
+				<div id = "n_line2"><img src="vid_line.png"/></div>
+				<div id = "n3"></div>
+				<div id = "n1_over"></div>
+				<div id = "n2_over"></div>
+				<div id = "n3_over"></div>
+			</div>
+			
+		</div><!-- container -->
+		
+		
+	</div>
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>	
+	<script src="main.js"></script>
+	
+    <script>
+       //Initialize Enabler
+       if (Enabler.isInitialized()) {
+         init();
+       } else {
+         Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+       }
+       //Run when Enabler is ready
+       function init(){
+         //politeInit();
+         //Load in Javascript
+         if(Enabler.isPageLoaded()){
+           politeInit();
+         }else{
+           Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+         } 
+       }
+	   
+       function politeInit(){ 
+		
+	   	TweenLite.delayedCall(.5, presets);
+		
+	   }   
+	   
+	</script>
+	
+</body>
+</html>

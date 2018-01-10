@@ -1,0 +1,858 @@
+	/* STYLES */
+	
+	@font-face {
+	    font-family: 'ProxReg';
+	    src: url('Proxima_Nova_Reg.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+	
+	body, html {
+		overflow:hidden;
+	}
+	
+	body {
+		margin:0;
+		border:0;
+	}
+
+	#container{
+		position:absolute;
+		top:0;
+		left:0;
+		width:1440px;
+		height:706px;
+		overflow:hidden;
+		opacity:0.0;
+		background-color:#1d1d1d;		
+	}	
+	
+	/* VID ASSETS */
+	
+	#vid_player_container{
+		position:absolute;
+		top:74px;
+		left:44px;
+		width:778px;
+		height:438px;
+		border:1px solid #3f3f3f;
+		background-color:#000;
+		overflow:hidden;
+	}	
+	
+	#vid{
+		position:absolute;
+		top:0;
+		left:-1px;
+		width:780px;
+		height:438px;
+		display:none;
+	}	
+	
+	
+	#vid_still{
+		position:absolute;
+		top:0;
+		left:0;
+		display:none;
+		opacity:0.0;
+	}
+	
+	#vid_nav{
+		position:absolute;
+		bottom:52px;
+		left:198px;
+		width:628px;
+		height:125px;
+		display:none;
+		overflow:hidden;
+		
+	}
+	
+	#n1, #n2, #n3, #n1_over, #n2_over, #n3_over{
+		position:absolute;
+		background:url(vid_nav.png)no-repeat;
+	}	
+	
+	#n1{
+		top:6px;
+		left:10px;
+		width:225px;
+		height:120px;
+		background-position:0 0;
+		opacity:0.0;
+	}	
+	
+	#n2{
+		top:6px;
+		left:210px;
+		width:225px;
+		height:120px;
+		background-position:-256px 0;
+		opacity:0.0;
+		
+	}	
+	
+	#n3{
+		top:6px;
+		left:408px;
+		width:225px;
+		height:120px;
+		background-position:-507px 0;
+		opacity:0.0;
+		
+	}	
+	
+	#n1_over{
+		top:5px;
+		left:9px;
+		width:225px;
+		height:120px;
+		background-position:1px -130px;
+		opacity:0.0;
+		cursor:pointer;
+	}	
+	
+	#n2_over{
+		top:5px;
+		left:210px;
+		width:225px;
+		height:120px;
+		background-position:-257px -130px;
+		opacity:0.0;
+		cursor:pointer;
+		
+	}	
+	
+	#n3_over{
+		top:6px;
+		left:408px;
+		width:225px;
+		height:120px;
+		background-position:-507px -131px;
+		opacity:0.0;
+		cursor:pointer;
+		
+	}	
+	
+	
+	#n_line1{
+		position:absolute;
+		top:3px;
+		left:194px;
+		opacity:0.0;
+	}	
+	
+	#n_line2{
+		position:absolute;
+		top:3px;
+		left:392px;
+		opacity:0.0;
+	}	
+	
+	#n_txt{
+		position:absolute;
+		bottom:105px;
+		left:73px;
+		width:111px;
+		height:32px;
+	    font-size:20px;
+		font-family: 'ProxReg'; 
+		color:#999999;
+		text-align:right;
+		line-height:22px;
+		opacity:0.0;
+	}			
+	
+	/* ASSETS */
+	
+	#s1{
+		position:absolute;
+		top:0;
+		right:-385px;
+		opacity:1.0;
+	}
+	
+	#s2{
+		position:absolute;
+		top:0;
+		left:409px;
+		opacity:1.0;
+	}
+	
+	#s3{
+		position:absolute;
+		top:0;
+		left:215px;
+		opacity:1.0;
+	}
+	
+	#s4{
+		position:absolute;
+		top:0;
+		left:-549px;
+		opacity:1.0;
+	}
+	
+	#s5{
+		position:absolute;
+		top:0;
+		right:-385px;
+		opacity:1.0;
+	}
+	
+	#s6{
+		position:absolute;
+		top:0;
+		left:409px;
+		opacity:1.0;
+	}
+	
+	#s7{
+		position:absolute;
+		top:0;
+		left:215px;
+		opacity:1.0;
+	}
+	
+	#s8{
+		position:absolute;
+		top:0;
+		left:-549px;
+		opacity:1.0;
+	}
+	
+	
+	
+	#yellow_bar{
+		position:absolute;
+		top:-4px;
+		right:213px;
+		opacity:0.0;
+	}
+	
+	#t_container{
+		position:absolute;
+		top:75px;
+		left:875px;
+		width:460px;
+		height:425px;
+	}
+	
+	
+	#t1_container{
+		position:absolute;
+		top:75px;
+		left:875px;
+		width:460px;
+		height:425px;
+	}
+	
+	#t1a, #t1b, #t2, #t3a, #t3b, #t3c, #t3d, #t3e, #t3f, #t3g, #t3h{
+		position:absolute;
+		font-family: 'ProxReg'; 
+		color:#dfdede;
+		text-align:left;
+		
+	}		
+	
+	#t1a{
+		top:10px;
+		left:127px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}	
+	
+	#t1b{
+		top:61px;
+		left:109px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+		
+	#t2{
+		top:144px;
+		left:92px;
+		width:295px;
+		height:35px;
+	    font-size:22px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t3a{
+		top:188px;
+		left:83px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t3b{
+		top:217px;
+		left:74px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t3c{
+		top:246px;
+		left:65px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t3d{
+		top:275px;
+		left:56px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t3e{
+		top:304px;
+		left:47px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t3f{
+		top:333px;
+		left:38px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.5px;
+		opacity:0.0;
+	}		
+	
+	#t3g{
+		top:362px;
+		left:29px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t3h{
+		top:391px;
+		left:20px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}	
+	
+	
+	#t2_container{
+		position:absolute;
+		top:75px;
+		left:875px;
+		width:460px;
+		height:425px;
+		display:none;
+		
+	}
+	
+	#t11a, #t11b, #t22, #t33a, #t33b, #t33c, #t33d, #t33e, #t33f, #t33g, #t33h{
+		position:absolute;
+		font-family: 'ProxReg'; 
+		color:#dfdede;
+		text-align:left;
+	}		
+	
+	#t11a{
+		top:10px;
+		left:127px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		text-align:center;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}	
+	
+	#t11b{
+		top:61px;
+		left:125px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		text-align:center;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+		
+	#t22{
+		top:144px;
+		left:92px;
+		width:320px;
+		height:35px;
+	    font-size:22px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t33a{
+		top:188px;
+		left:83px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t33b{
+		top:217px;
+		left:74px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t33c{
+		top:246px;
+		left:65px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t33d{
+		top:275px;
+		left:56px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t33e{
+		top:304px;
+		left:47px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t33f{
+		top:333px;
+		left:38px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.5px;
+		opacity:0.0;
+	}		
+	
+	#t33g{
+		top:362px;
+		left:29px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t33h{
+		top:391px;
+		left:20px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}	
+	
+	#t3_container{
+		position:absolute;
+		top:75px;
+		left:875px;
+		width:460px;
+		height:425px;
+		display:none;
+	}
+	
+	#t111a, #t111b, #t222, #t333a, #t333b, #t333c, #t333d, #t333e, #t333f, #t333g, #t333h{
+		position:absolute;
+		font-family: 'ProxReg'; 
+		color:#dfdede;
+		text-align:left;
+		
+	}		
+	
+	#t111a{
+		top:10px;
+		left:127px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		text-align:center;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}	
+	
+	#t111b{
+		top:61px;
+		left:125px;
+		width:200px;
+		height:43px;
+	    font-size:43px;
+		text-align:center;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+		
+	#t222{
+		top:144px;
+		left:92px;
+		width:295spx;
+		height:35px;
+	    font-size:22px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t333a{
+		top:188px;
+		left:83px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t333b{
+		top:217px;
+		left:74px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t333c{
+		top:246px;
+		left:65px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t333d{
+		top:275px;
+		left:56px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.4px;
+		opacity:0.0;
+	}		
+	
+	#t333e{
+		top:304px;
+		left:47px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t333f{
+		top:333px;
+		left:38px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.5px;
+		opacity:0.0;
+	}		
+	
+	#t333g{
+		top:362px;
+		left:29px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}		
+	
+	#t333h{
+		top:391px;
+		left:20px;
+		width:400px;
+		height:22px;
+	    font-size:16px;
+		letter-spacing:.3px;
+		opacity:0.0;
+	}	
+	
+	#l_container{
+		position:absolute;
+		bottom:90px;
+		left:875px;
+		width:291px;
+		height:60px;
+		opacity:1.0;
+		
+	}
+	
+	#l_txt_container{
+		position:absolute;
+		top:25px;
+		left:6px;
+		width:105px;
+		height:20px;
+		overflow:hidden;
+		opacity:1.0;
+	}		
+	
+	
+	#l_txt{
+		position:absolute;
+		top:0;
+		left:0;
+		width:105px;
+		height:20px;
+	    font-size:13px;
+		font-family: 'ProxReg'; 
+		color:#88fff0;
+		opacity:1.0;
+	}		
+	
+	#logo{
+		position:absolute;
+		top:9px;
+		left:126px;
+		opacity:0.0;
+	}	
+				
+	/* BUTTONS */
+
+	#click_sound{
+		position:absolute;
+		top:75px;
+		left:45px;
+		width:780px;
+		height:25px;
+		background:rgba(0,5,5,0.5); 
+		background-image: url("vid_btns.png");
+		background-repeat:no-repeat;
+		background-position:292px -65px;
+		cursor:pointer;
+		opacity:0.0;
+	}
+	
+	
+	#video_button{
+		position:absolute;
+		top:74px;
+		left:44px;
+		width:778px;
+		height:438px;
+		cursor:pointer;
+		
+	}
+	
+	#video_button2{
+		position:absolute;
+		top:74px;
+		left:44px;
+		width:778px;
+		height:438px;
+		cursor:pointer;
+		display:none;
+		
+	}
+	
+	#btns_vid{
+		position:absolute;
+		bottom:203px;
+		left:51px;
+		width:56px;
+		height:30px;
+		background:rgba(5,5,5,0.5); 
+	    border-radius: 4px;
+		display:none;
+		opacity:0.8;
+		
+	}	
+	
+	#btn_sound{
+		position:absolute;
+		top:1px;
+		left:29px;
+		width:25px;
+		height:25px;
+		background-image: url("vid_btns.png");
+		background-repeat:no-repeat;
+		background-position:-42px -18px;
+		cursor:pointer;
+	}
+	
+	
+	#btn_play{
+		position:absolute;
+		top:3px;
+		left:3px;
+		width:20px;
+		height:20px;
+		background-image: url("vid_btns.png");
+		background-repeat:no-repeat;
+		background-position:-20px -20px;
+		cursor:pointer;
+		display:none;
+	}
+	
+	#btn_pause{
+		position:absolute;
+		top:3px;
+		left:1px;
+		width:22px;
+		height:22px;
+		background-image: url("vid_btns.png");
+		background-repeat:no-repeat;
+		background-position:0 -20px;
+		cursor:pointer;
+			
+	}
+	
+	#btn_replay{
+		position:absolute;
+		top:80px;
+		left:800px;
+		cursor:pointer;
+		opacity:0.0;
+		display:none;
+	}
+	
+	/* PROGRESS BAR */
+	
+	#progress_bg_container{
+		position:absolute;
+		bottom:193px;
+		left:45px;
+		width:779px;
+		height:6px;
+		overflow:hidden;
+	}
+	
+	#progress_bg{
+		position:absolute;
+		bottom:-5px;
+		left:0;
+		width:779px;
+		height:22px;
+		cursor:pointer;
+		display:none;
+	}
+
+	#progress_bar{
+		margin:0;	
+		opacity:1;
+		width:779px;
+		height:6px;
+		
+	}
+
+	progress,          /* All HTML5 progress enabled browsers */
+	progress[role]     /* polyfill */
+	{
+
+		/* Turns off styling - not usually needed, but good to know. */
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+	
+		height:5px;	
+	}
+
+	/* Ensure fallback text doesn't appear in polyfill */s
+	/* color of progress bar bg*/
+	progress[role][aria-valuenow] {    /* Polyfill */
+	   background: black !important; /* !important is needed by the polyfill */
+	}
+
+	progress{
+	   background: black; /* !important is needed by the polyfill */
+	}                         /* Firefox  */ 
+
+
+	/* Chrome */
+	progress::-webkit-progress-bar {
+	    background: #2d2d2d;
+		opacity:1;
+	}
+	/*bd2226*/
+	/* color of progress bar*/
+	/* IE10 */
+	progress {
+	    background: #656563;
+	}
+
+	/* Firefox */
+	progress::-moz-progress-bar { 
+	    background: #656563;
+	}
+
+	/* Chrome */
+	progress::-webkit-progress-value {
+	    background: #656563;
+	}
+
+	/* Polyfill */
+	progress[aria-valuenow]:before  {
+	    background: #656563;
+	}
+	
+		
+	/* CLICK TAG */
+
+	#ct{
+			position:absolute;
+			top:0;
+			left:0;
+			width:1440px;
+			height:706px;
+			overflow:hidden;
+			cursor:pointer;
+	}
+	

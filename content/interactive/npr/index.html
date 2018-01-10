@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>DIGIDAY</title>
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+					
+</head>
+	
+<body>
+
+	<div id="container">
+		
+		
+			
+			<audio id = "audio" src=""></audio>
+					
+			<div id = "s1"><img src="s1.png" /></div>
+			<div id = "s2"><img src="s2.png" /></div>
+			<div id = "s3"><img src="s3.png" /></div>
+			<div id = "s4"><img src="s4.png" /></div>
+			<div id = "s5"><img src="s1.png" /></div>
+			<div id = "s6"><img src="s2.png" /></div>
+			<div id = "s7"><img src="s3.png" /></div>
+			<div id = "s8"><img src="s4.png" /></div>
+			
+			<div id="ad_container">						
+			
+			<img id="img" src ="img.jpg">
+			
+			<div id = "custom_container">
+			<div id = "custom_logo"><img src ="custom_logo.svg" /></div>	
+			<div id = "podcasts">PODCASTS</div>	
+		    </div>
+			
+			<div id = "snd_wave"><img src = "snd_wave.png" /></div>
+			
+			<div id = "snd_wave_over_container">
+			<div id = "snd_wave_over"><img src = "snd_wave_over.png" /></div>
+			</div>
+			
+			<div id="progress_bg_container">
+			<div id="progress_bg">
+			<progress id='progress_bar' max='100' value='0'><span>0</span>% played</progress>
+			</div>
+			</div>
+			
+			<div id = "red_bar"><img src = "red_bar.png" /></div>
+			
+			<div id = "l_container">
+				<div id = "l_txt_container">
+				<div id = "l_txt">SPONSORED BY</div>
+				</div>
+				<div id = "logo"><img id = "npr_logo" src ="npr_logo.jpg" /></div>
+			</div>
+			
+			
+			
+			<div id = "t_container">
+				<div id = "t1">The Podcast Payoff</div>
+			</div>
+			
+			<div id = "txt_container1">
+			<div id = "t_container2">
+				<div id = "t1b">The Audience</div>
+			</div>
+			<div id = "t1_container">
+				<div id = "t2">Sixty-seven million Americans count them-</div>
+				<div id = "t3a">selves as podcasts listeners, but who are they?</div>
+				<div id = "t3b">We sat down with agency buyers and senior</div>
+				<div id = "t3c">brand marketers to learn more about the</div>
+				<div id = "t3d">people between the earbuds and the listening</div>
+				<div id = "t3e">experience that makes this audience-and this </div>
+				<div id = "t3f">medium-unique.</div>
+			</div>		
+			</div>	
+			
+			<div id = "txt_container2">
+			<div id = "t_container22">
+				<div id = "t1b2">The Content</div>
+			</div>
+			<div id = "t1_container2">
+				<div id = "t22">Brands are embracing podcasting as a medium</div>
+				<div id = "t3a2">and that means they need content. We speak</div>
+				<div id = "t3b2">with senior brand marketers from LootCrate,</div>
+				<div id = "t3c2">Babbel, and Merriam-Webster about how</div>
+				<div id = "t3d2">they're sourcing the right partners, producing</div>
+				<div id = "t3e2">branded podcasts of their own, and finding the</div>
+				<div id = "t3f2">messages that hit their KPIs.</div>
+			</div>		
+			</div>	
+			
+			<div id = "txt_container3">
+			<div id = "t_container23">
+				<div id = "t1b3">The Metrics</div>
+			</div>
+			<div id = "t1_container3">
+				<div id = "t23">We close out our discussion of podcasting by</div>
+				<div id = "t3a3">tackling the eternal question for brand mark-</div>
+				<div id = "t3b3">eters: How do you measure success? A new</div>
+				<div id = "t3c3">channel requires new metrics and in a still-</div>
+				<div id = "t3d3">evolving measurement ecosystem, we asked</div>
+				<div id = "t3e3">senior brand marketers and media buyers to</div>
+				<div id = "t3f3">pin down their the numbers they think are</div>
+				<div id = "t3g3">the best indicators of a winning campaign.</div>
+				<div id = "t3h3"></div>
+			</div>		
+			</div>	
+			
+			<div id = "n_txt">MORE IN<br />THIS SERIES</div>
+			
+			<div id = "ct"></div>
+			<img id = "cta" src ="cta.svg" />
+						
+			<div id = "btns_vid">
+			<div id = "btn_pause"></div>
+			<div id = "btn_play"></div>
+			<div id = "snd_time">:00</div>
+		    </div>
+			
+			<div id = "vid_nav">
+				<div id = "n1"></div>
+				<div id = "n_line1"><img src="vid_line.png"/></div>
+				<div id = "n2"></div>
+				<div id = "n_line2"><img src="vid_line.png"/></div>
+				<div id = "n3"></div>
+				<div id = "n1_over"></div>
+				<div id = "n2_over"></div>
+				<div id = "n3_over"></div>
+			</div>
+			
+			</div>
+			
+			
+			<img id="btn_replay" src="btn_replay.svg" />
+			
+			
+		</div><!-- container -->
+		
+		
+	</div>
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+	<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.19.0_643d6911392a3398cb1607993edabfa7_min.js"></script>	
+	<script src="main.js"></script>
+	
+    <script>
+       //Initialize Enabler
+       if (Enabler.isInitialized()) {
+         init();
+       } else {
+         Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+       }
+       //Run when Enabler is ready
+       function init(){
+         //politeInit();
+         //Load in Javascript
+         if(Enabler.isPageLoaded()){
+           politeInit();
+         }else{
+           Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+         } 
+       }
+	   
+       function politeInit(){ 
+		
+	   	TweenLite.delayedCall(.5, presets);
+		
+	   }   
+	   
+	</script>
+	
+</body>
+</html>
